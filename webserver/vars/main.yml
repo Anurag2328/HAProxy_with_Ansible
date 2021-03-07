@@ -1,0 +1,5 @@
+# vars file for webserver
+
+software_name: "httpd"
+document_root: "/var/www/html"
+service_name: "httpd"

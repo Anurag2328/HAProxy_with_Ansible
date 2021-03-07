@@ -1,0 +1,23 @@
+---
+# tasks file for webserver
+
+- name: "Installing {{software_name}}..."
+  package:
+          name: "{{software_name}}"
+          state: present
+
+- name: "Installing PHP"
+  package:
+          name: "php"
+          state: present
+
+- name: "deploying webpages"
+  copy:
+          src: "files/task.php"
+          dest: "{{document_root}}"
+
+- name: "Starting httpd service"
+  service:
+          name: "{{service_name}}"
+          state: started
+

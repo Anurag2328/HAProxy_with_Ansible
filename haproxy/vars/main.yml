@@ -1,0 +1,7 @@
+---
+# vars file for haproxy
+
+software_name: "haproxy"
+document_root: "/etc/haproxy/haroxy.cfg"
+port: 8080
+service_name: "haproxy"
